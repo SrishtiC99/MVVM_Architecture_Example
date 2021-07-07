@@ -1,14 +1,15 @@
 package com.example.srishti.mvvmarchitectureexample;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelProviders;
 
-import android.arch.lifecycle.LifecycleOwner;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
+
 import android.widget.Toast;
 
 import java.util.List;
@@ -21,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        noteViewModel = ViewModelProviders.of((FragmentActivity) getApplicationContext()).get(NoteViewModel.class);
-        noteViewModel.getAllNotes().observe((LifecycleOwner) this, new Observer<List<Note>>() {
+        noteViewModel = ViewModelProviders.of(this).get(NoteViewModel.class);
+        noteViewModel.getAllNotes().observe(this, new Observer<List<Note>>() {
             @Override
             public void onChanged(@Nullable @org.jetbrains.annotations.Nullable List<Note> notes) {
                 // Update RecyclerView

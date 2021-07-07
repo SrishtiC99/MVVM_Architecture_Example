@@ -1,7 +1,8 @@
 package com.example.srishti.mvvmarchitectureexample;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 
 // Room Annotation
 @Entity(tableName = "note_table") //by default name of the table would be Note but we are
