@@ -1,4 +1,4 @@
-package com.example.srishti.mvvmarchitectureexample;
+package com.example.srishti.mvvmarchitectureexample.Database;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -8,6 +8,9 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
+
+import com.example.srishti.mvvmarchitectureexample.Dao.NoteDao;
+import com.example.srishti.mvvmarchitectureexample.Entity.Note;
 
 import org.jetbrains.annotations.NotNull;
 

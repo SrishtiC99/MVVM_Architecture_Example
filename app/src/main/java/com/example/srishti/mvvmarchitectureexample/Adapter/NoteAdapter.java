@@ -1,4 +1,4 @@
-package com.example.srishti.mvvmarchitectureexample;
+package com.example.srishti.mvvmarchitectureexample.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.srishti.mvvmarchitectureexample.Entity.Note;
+import com.example.srishti.mvvmarchitectureexample.R;
 
 import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;

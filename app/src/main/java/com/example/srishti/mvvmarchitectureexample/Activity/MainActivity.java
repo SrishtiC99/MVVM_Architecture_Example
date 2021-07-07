@@ -1,4 +1,4 @@
-package com.example.srishti.mvvmarchitectureexample;
+package com.example.srishti.mvvmarchitectureexample.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +18,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.srishti.mvvmarchitectureexample.Entity.Note;
+import com.example.srishti.mvvmarchitectureexample.Adapter.NoteAdapter;
+import com.example.srishti.mvvmarchitectureexample.ViewModel.NoteViewModel;
+import com.example.srishti.mvvmarchitectureexample.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.jetbrains.annotations.NotNull;

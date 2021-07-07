@@ -1,4 +1,4 @@
-package com.example.srishti.mvvmarchitectureexample;
+package com.example.srishti.mvvmarchitectureexample.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.Toast;
+
+import com.example.srishti.mvvmarchitectureexample.R;
 
 public class AddOrEditNoteActivity extends AppCompatActivity {
     public static final String EXTRA_ID = "com.example.srishti.mvvmarchitectureexample.EXTRA_ID";

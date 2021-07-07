@@ -1,4 +1,4 @@
-package com.example.srishti.mvvmarchitectureexample;
+package com.example.srishti.mvvmarchitectureexample.ViewModel;
 
 import android.app.Application;
 
@@ -6,6 +6,9 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+
+import com.example.srishti.mvvmarchitectureexample.Entity.Note;
+import com.example.srishti.mvvmarchitectureexample.Repository.NoteRepository;
 
 import org.jetbrains.annotations.NotNull;
 

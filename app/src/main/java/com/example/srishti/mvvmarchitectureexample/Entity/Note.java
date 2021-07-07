@@ -1,4 +1,4 @@
-package com.example.srishti.mvvmarchitectureexample;
+package com.example.srishti.mvvmarchitectureexample.Entity;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

@@ -1,9 +1,13 @@
-package com.example.srishti.mvvmarchitectureexample;
+package com.example.srishti.mvvmarchitectureexample.Repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
+
+import com.example.srishti.mvvmarchitectureexample.Dao.NoteDao;
+import com.example.srishti.mvvmarchitectureexample.Entity.Note;
+import com.example.srishti.mvvmarchitectureexample.Database.NoteDatabase;
 
 import java.util.List;
 
